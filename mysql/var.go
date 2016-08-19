@@ -59,16 +59,26 @@ func main(){
 // fmt.Printf("The length of \"%s\" is %d \n",str,len(str))
 // fmt.Printf("The first character is %c",ch)
 // 遍历字符串
-str := "hello world"
-n := len(str)
-for i:=0;i<n;i++{
-	ch := str[i]
-	fmt.Println(i,ch)
-	fmt.Printf("%c\n",ch)
+// str := "hello world"
+// n := len(str)
+// for i:=0;i<n;i++{
+// 	ch := str[i]
+// 	fmt.Println(i,ch)
+// 	fmt.Printf("%c\n",ch)
+// }
+// 数组
+
+array :=[10]int{1,2,3,4,5}
+modify(array)
+fmt.Println(array)
+}
+func modify (array [10]int){
+	array[0] = 10
+	fmt.Println(array)
 }
 
 
-}
+
 func IsEqual(f1,f2,p float64) bool{
 	return math.Abs(f1-f2)<p
 }
