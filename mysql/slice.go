@@ -26,9 +26,12 @@ func main(){
 mySlice2 := make([]int ,5,10)
 // 直接创建并初始化包含5个元素的数组切片
 // mySlice3 := []int{1,2,3,4,5}
+
+mySlice2 = append(mySlice2,2,3,4)
+fmt.Println("len(mySlice):",len(mySlice2))
+fmt.Println("cap(mySlice)",cap(mySlice2))
+
 for i,v := range mySlice2{
 	fmt.Println("mySlice[",i,"] = ",v)
 }
-
-
 }
